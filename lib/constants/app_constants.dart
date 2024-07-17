@@ -1,11 +1,11 @@
 abstract class ThingsboardAppConstants {
-  static const thingsBoardApiEndpoint = 'http://localhost:8080';
-  static const thingsboardOAuth2CallbackUrlScheme =
-      'org.thingsboard.pe.app.auth';
+  static final thingsBoardApiEndpoint = 'https://voeetmoi.fr';
+  //static final thingsboardOAuth2CallbackUrlScheme = 'com.jeedom.voe.auth';
+  static final thingsboardOAuth2CallbackUrlScheme = 'com.jeedom.voe.auth';
 
   /// Not for production (only for debugging)
-  static const thingsboardOAuth2AppSecret = 'Your app secret here';
+  static final thingsboardOAuth2AppSecret = 'Your app secret here';
 
   /// Not for production (only for debugging)
-  static const thingsboardSignUpAppSecret = 'Your sign up app secret here';
+  static final thingsboardSignUpAppSecret = 'Your sign up app secret here';
 }
