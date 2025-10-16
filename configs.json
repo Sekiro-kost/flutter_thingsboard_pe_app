@@ -1,0 +1,14 @@
+{
+  "thingsboardApiEndpoint": "https://jeedevtb-01.jeedom.com",
+  "appLinksUrlHost": "jeedevtb-01.jeedom.com",
+  "appLinksUrlScheme": "https",
+  "registrationRedirectUrlScheme": "tbscheme",
+  "registrationRedirectUrlHost": "app.pe.thingsboard.org",
+  "androidApplicationId": "com.jeedom.jeedevtb",
+  "androidApplicationName": "jeedevtb",
+  "thingsboardOAuth2CallbackUrlScheme": "com.jeedom.jeedevtb.auth",
+  "thingsboardAndroidAppSecret": "UWViMzBoY3JTeGNsZ084VjF6WHBkRjFSRUFPaFZYQkpLMnl6Q01wWTR5N0FTelBYV0Q1Z0o1VGxOTkRRR01CcA==",
+  "iosApplicationId": "com.jeedom.jeedevtb",
+  "iosApplicationName": "jeedevTb",
+  "thingsboardIosAppSecret": "MWRhcEpQQ2h1REFiaHBiY2FONEpDT2lrOW5kQU1rTERWS2VEVXlQYzhlU1I2bTB0aVdPTlVpVEx5M2g5WEE0eQ=="
+}

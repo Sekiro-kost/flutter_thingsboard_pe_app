@@ -160,9 +160,9 @@ PODS:
     - RecaptchaInterop (~> 101.0.0)
   - RecaptchaEnterpriseSDK (18.7.0)
   - RecaptchaInterop (101.0.0)
-  - SDWebImage (5.21.1):
-    - SDWebImage/Core (= 5.21.1)
-  - SDWebImage/Core (5.21.1)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
   - sqflite_darwin (0.0.4):
     - Flutter
     - FlutterMacOS
@@ -338,7 +338,7 @@ SPEC CHECKSUMS:
   RecaptchaEnterprise: a5914ad9db6ff79eaca7258d82ecef6f10009936
   RecaptchaEnterpriseSDK: 5e72d7f19d2f679b68c25071c33b40f817e21149
   RecaptchaInterop: 11e0b637842dfb48308d242afc3f448062325aba
-  SDWebImage: f29024626962457f3470184232766516dee8dfea
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
   sqflite_darwin: 20b2a3a3b70e43edae938624ce550a3cbf66a3d0
   SwiftProtobuf: 7773c4e96a99d7b8ab7cda0fc30a883732ff93b1
   SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
