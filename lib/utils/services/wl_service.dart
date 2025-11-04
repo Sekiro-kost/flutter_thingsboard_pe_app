@@ -28,14 +28,14 @@ class WlService {
       TbThemeUtils.createTheme(_defaultLoginWlParams.paletteSettings);
 
   static final _defaultLogo = SvgPicture.asset(
-    ThingsboardImage.thingsBoardWithTitle,
+    'assets/images/voeetmoi.svg',
     height: 36 / 3 * 2,
     colorFilter: ColorFilter.mode(TbThemeUtils.tbPrimary, BlendMode.srcIn),
     semanticsLabel: 'ThingsBoard Logo',
   );
 
   static final _defaultLoginLogo = SvgPicture.asset(
-    ThingsboardImage.thingsBoardWithTitle,
+    'assets/images/voeetmoi.svg',
     height: 50 / 3 * 2,
     colorFilter: ColorFilter.mode(TbThemeUtils.tbPrimary, BlendMode.srcIn),
     semanticsLabel: 'ThingsBoard Logo',
@@ -277,27 +277,35 @@ class WlService {
   ) async {
     Widget image;
     final double height = wlParams.logoImageHeight!.toDouble() / 3 * 2;
-    if (wlParams.logoImageUrl == defaultLogoUrl) {
-      Region? region;
-
-      image = SvgPicture.asset(
-        region == Region.europe
-            ? ThingsboardImage.thingsBoardEUWithTitle
-            : ThingsboardImage.thingsBoardWithTitle,
-        height: height,
-        colorFilter: ColorFilter.mode(themeData.primaryColor, BlendMode.srcIn),
-        semanticsLabel: 'ThingsBoard Logo',
-      );
-    } else {
-      image = Utils.imageFromTbImage(
-        context,
-        tbClient,
-        wlParams.logoImageUrl,
-        height: height,
-        semanticLabel: 'ThingsBoard Logo',
-        loginLogo: isLogin,
-      );
-    }
+    
+    // Force l'utilisation du logo local voeetmoi.svg
+    image = SvgPicture.asset(
+      'assets/images/voeetmoi.svg',
+      height: height,
+      semanticsLabel: 'Logo',
+    );
+    
+    // Code original commenté pour référence
+    // if (wlParams.logoImageUrl == defaultLogoUrl) {
+    //   Region? region;
+    //   image = SvgPicture.asset(
+    //     region == Region.europe
+    //         ? ThingsboardImage.thingsBoardEUWithTitle
+    //         : ThingsboardImage.thingsBoardWithTitle,
+    //     height: height,
+    //     colorFilter: ColorFilter.mode(themeData.primaryColor, BlendMode.srcIn),
+    //     semanticsLabel: 'ThingsBoard Logo',
+    //   );
+    // } else {
+    //   image = Utils.imageFromTbImage(
+    //     context,
+    //     tbClient,
+    //     wlParams.logoImageUrl,
+    //     height: height,
+    //     semanticLabel: 'ThingsBoard Logo',
+    //     loginLogo: isLogin,
+    //   );
+    // }
     if (isLogin) {
       _loginLogo = image;
     } else {
