@@ -123,15 +123,8 @@ class _LoginPageState extends TbPageState<LoginPage>
                                   children: [
                                     Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.end,
                                       children: [
-                                        if (tbContext.wlService.loginLogoImage !=
-                                                null) SizedBox(
-                                                height: 29,
-                                                width: 133,
-                                                child: tbContext
-                                                    .wlService.loginLogoImage,
-                                              ) else const SizedBox(height: 25),
                                         Visibility(
                                           visible: selectedRegion != null,
                                           child: TextButton(
@@ -187,15 +180,8 @@ class _LoginPageState extends TbPageState<LoginPage>
                                         ),
                                       ),
                                     const SizedBox(height: 32),
-                                    Align(
-                                      child: Text(
-                                        S.of(context).loginNotification,
-                                        style: TbTextStyles.titleLarge.copyWith(
-                                          color: Colors.black.withValues(
-                                            alpha: .87,
-                                          ),
-                                        ),
-                                      ),
+                                    Center(
+                                      child: tbContext.wlService.loginLogoImage ?? const SizedBox.shrink(),
                                     ),
                                     const SizedBox(height: 48),
                                     if (state.oAuthClients.isNotEmpty)

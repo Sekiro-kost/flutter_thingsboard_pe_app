@@ -276,13 +276,12 @@ class WlService {
     bool isLogin,
   ) async {
     Widget image;
-    final double height = wlParams.logoImageHeight!.toDouble() / 3 * 2;
+    final double height = wlParams.logoImageHeight!.toDouble() * 3;
     
-    // Force l'utilisation du logo local voeetmoi.svg
-    image = SvgPicture.asset(
-      'assets/images/voeetmoi.svg',
-      height: height,
-      semanticsLabel: 'Logo',
+    // Force l'utilisation du logo local voeetmoi.png avec taille x2.5
+    image = Image.asset(
+      'assets/images/voeetmoi.png',
+      height: height
     );
     
     // Code original commenté pour référence
